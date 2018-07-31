@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_scrollFlags="scroll|enterAlways"
         app:popupTheme="@style/AppTheme.PopupOverlay"
-        app:title="Garbh Raksha">
+        app:title="@string/app_name">
 
     </android.support.v7.widget.Toolbar>
 
@@ -40,6 +40,22 @@
         app:layout_constraintVertical_bias="0.026"
         app:srcCompat="@drawable/profilefinal" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_content_paste_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 
     <TextView
@@ -58,6 +74,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/profile_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:text="W/o:"
+        android:textSize="27dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/profile_name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:text="Sanjay Kumar Parmar"
+        android:textSize="27dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/baby_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name" />
 
     <TextView
         android:id="@+id/profile_phone"
@@ -91,31 +141,51 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name2"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/profile_anganvadi"
+        android:id="@+id/profile_mother1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="10dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:text="Address : \n12/34, Mangalpur,\nRaipur,Chattisgarh"
+        android:layout_marginTop="1dp"
+        android:text="    Address :"
+        android:textAlignment="center"
         android:textSize="23dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_phone"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/profile_mother2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="  12/34 Futani Chowk,\n   Mangalpur,Raipur,\n   Chattisgarh"
+        android:textSize="23dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/profile_anganvadi1"
+        app:layout_constraintTop_toBottomOf="@+id/profile_phone"
+        app:layout_constraintVertical_bias="0.056" />
 
     <Button
         android:id="@+id/call_anganwadi"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -125,7 +195,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_anganvadi"
+        app:layout_constraintTop_toBottomOf="@+id/profile_mother2"
         app:layout_constraintVertical_bias="0.851" />
 
 

@@ -142,14 +142,15 @@ public class Home extends AppCompatActivity {
                     PhoneNumbers phoneNumbers = new PhoneNumbers();
                     return phoneNumbers;
                 case 1:
-                    PreNatal preNatal = new PreNatal();
-                    return preNatal;
-                case 2:
-                    PostNatal postNatal = new PostNatal();
-                    return postNatal;
-                case 3:
                     Symptoms symptoms = new Symptoms();
                     return symptoms;
+                case 2:
+                    PreNatal preNatal = new PreNatal();
+                    return preNatal;
+                case 3:
+                    PostNatal postNatal = new PostNatal();
+                    return postNatal;
+
             }
             return null;
         }

@@ -23,7 +23,7 @@
             android:background="@color/darkbrinjal"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title= "Garbh Raksha">
+            app:title= "@string/app_name">
 
         </android.support.v7.widget.Toolbar>
 
@@ -37,24 +37,24 @@
                 android:id="@+id/phone_numbers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone Numbers" />
+                android:text="Contacts" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/pre_natal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pre Natal" />
+                android:text="Problems" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/post_natal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Post Natal" />
+                android:text="Pre natal" />
 
             <android.support.design.widget.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Symptoms"
+                android:text="Post natal"
                 android:id="@+id/symptoms"/>
         </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>
@@ -71,6 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:backgroundTint="@color/green"
+        android:src="@drawable/ic_call_black_24dp" />
 
 </android.support.design.widget.CoordinatorLayout>

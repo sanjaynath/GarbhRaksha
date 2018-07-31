@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_scrollFlags="scroll|enterAlways"
         app:popupTheme="@style/AppTheme.PopupOverlay"
-        app:title="Garbh Raksha">
+        app:title="@string/app_name">
 
     </android.support.v7.widget.Toolbar>
 
